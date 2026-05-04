@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Penmax Nutrition & Herbal Clinic | Natural Healing in Kenya</title>
+<meta name="description" content="Penmax Nutrition & Herbal Clinic combines traditional African herbal wisdom with modern nutrition science. Book a consultation or shop herbal products online."/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+<!-- WhatsApp Float -->
+<a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank" title="Chat on WhatsApp">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<!-- Top Bar -->
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <span class="top-bar-item"><i class="fas fa-phone"></i> +254 700 000 000</span>
+      <span class="top-bar-item"><i class="fas fa-envelope"></i> info@penmaxherbal.co.ke</span>
+    </div>
+    <div class="top-bar-right">
+      <span class="top-bar-item"><i class="fas fa-clock"></i> Mon–Sat: 8AM–6PM</span>
+      <a href="#" class="cart-toggle"><i class="fas fa-shopping-cart"></i> Cart (<span class="cart-count">0</span>)</a>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="assets/Penmax main logo.png" alt="Penmax Nutrition & Herbal Clinic"/>
+      </a>
+      <ul class="nav-menu">
+        <li class="nav-item"><a href="index.html" class="nav-link active">Home</a></li>
+        <li class="nav-item"><a href="about.html" class="nav-link">About</a></li>
+        <li class="nav-item dropdown">
+          <a href="services.html" class="nav-link">Services <i class="fas fa-chevron-down" style="font-size:.65rem"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="services.html#consultation" class="dropdown-item"><i class="fas fa-stethoscope"></i> Herbal Consultation</a></li>
+            <li><a href="services.html#nutrition" class="dropdown-item"><i class="fas fa-apple-alt"></i> Nutrition Therapy</a></li>
+            <li><a href="services.html#detox" class="dropdown-item"><i class="fas fa-leaf"></i> Detox Programs</a></li>
+            <li><a href="services.html#bodyscan" class="dropdown-item"><i class="fas fa-heartbeat"></i> Full Body Scan</a></li>
+          </ul>
+        </li>
+        <li class="nav-item dropdown">
+          <a href="store.html" class="nav-link">Shop <i class="fas fa-chevron-down" style="font-size:.65rem"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="store.html?cat=detox" class="dropdown-item"><i class="fas fa-flask"></i> Detox Formulas</a></li>
+            <li><a href="store.html?cat=immunity" class="dropdown-item"><i class="fas fa-shield-alt"></i> Immunity Boosters</a></li>
+            <li><a href="store.html?cat=women" class="dropdown-item"><i class="fas fa-female"></i> Women's Wellness</a></li>
+            <li><a href="store.html?cat=men" class="dropdown-item"><i class="fas fa-male"></i> Men's Vitality</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a href="conditions.html" class="nav-link">Conditions</a></li>
+        <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li>
+        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary">Book Consultation</a>
+      </div>
+      <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- Mobile Menu -->
+<div id="mobileMenu" style="display:none;position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(255,255,255,.98);z-index:999;overflow-y:auto;padding:30px 24px;">
+  <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:30px;">
+    <img src="assets/Penmax main logo.png" alt="Logo" style="height:50px;"/>
+    <button id="closeMenu" style="font-size:1.4rem;color:var(--green-dark);cursor:pointer;background:none;border:none;"><i class="fas fa-times"></i></button>
+  </div>
+  <ul style="display:flex;flex-direction:column;gap:4px;">
+    <li><a href="index.html" style="display:block;padding:14px 0;font-size:1.1rem;font-weight:600;color:var(--green-dark);border-bottom:1px solid #eee;">Home</a></li>
+    <li><a href="about.html" style="display:block;padding:14px 0;font-size:1.1rem;font-weight:600;color:var(--green-dark);border-bottom:1px solid #eee;">About Us</a></li>
+    <li><a href="services.html" style="display:block;padding:14px 0;font-size:1.1rem;font-weight:600;color:var(--green-dark);border-bottom:1px solid #eee;">Services</a></li>
+    <li><a href="store.html" style="display:block;padding:14px 0;font-size:1.1rem;font-weight:600;color:var(--green-dark);border-bottom:1px solid #eee;">Shop</a></li>
+    <li><a href="conditions.html" style="display:block;padding:14px 0;font-size:1.1rem;font-weight:600;color:var(--green-dark);border-bottom:1px solid #eee;">Conditions</a></li>
+    <li><a href="blog.html" style="display:block;padding:14px 0;font-size:1.1rem;font-weight:600;color:var(--green-dark);border-bottom:1px solid #eee;">Blog</a></li>
+    <li><a href="contact.html" style="display:block;padding:14px 0;font-size:1.1rem;font-weight:600;color:var(--green-dark);border-bottom:1px solid #eee;">Contact</a></li>
+  </ul>
+  <div style="margin-top:30px;display:flex;flex-direction:column;gap:12px;">
+    <a href="booking.html" class="btn btn-primary" style="text-align:center;justify-content:center;">Book Consultation</a>
+    <a href="https://wa.me/254700000000" class="btn btn-outline" style="text-align:center;justify-content:center;"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+  </div>
+</div>
+
+<!-- ═══ HERO ═══ -->
+<section class="hero" id="hero">
+  <div class="hero-bg"></div>
+  <div class="hero-overlay"></div>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-content">
+        <div class="hero-badge"><i class="fas fa-leaf"></i> Kenya's Natural Healing Specialists</div>
+        <h1 class="hero-title">Nature Already<br/><span>Created the Medicine</span></h1>
+        <p class="hero-sub">At Penmax Nutrition &amp; Herbal Clinic we combine traditional African herbal wisdom with modern nutrition science to support the body's natural healing ability.</p>
+        <div class="hero-btns">
+          <a href="booking.html" class="btn btn-gold"><i class="fas fa-calendar-alt"></i> Book Consultation</a>
+          <a href="store.html" class="btn btn-white"><i class="fas fa-shopping-bag"></i> Shop Herbal Products</a>
+        </div>
+        <div class="hero-stats">
+          <div>
+            <div class="hero-stat-num">15+</div>
+            <div class="hero-stat-label">Years Experience</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">8,000+</div>
+            <div class="hero-stat-label">Patients Helped</div>
+          </div>
+          <div>
+            <div class="hero-stat-num">200+</div>
+            <div class="hero-stat-label">Herbal Formulas</div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-image-wrap">
+          <img src="assets/doctor_consultation.png" alt="Natural Herbal Medicine Doctor"/>
+        </div>
+        <div class="hero-float-card card-1">
+          <div class="hero-float-icon">🌿</div>
+          <div class="hero-float-text">
+            <div class="label">Today's Focus</div>
+            <div class="value">Natural Detox</div>
+          </div>
+        </div>
+        <div class="hero-float-card card-2">
+          <div class="hero-float-icon">⭐</div>
+          <div class="hero-float-text">
+            <div class="label">Patient Rating</div>
+            <div class="value">4.9 / 5.0</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero-scroll">
+    <div class="scroll-dot"></div>
+  </div>
+</section>
+
+<!-- ═══ FEATURE STRIP ═══ -->
+<section class="features-strip">
+  <div class="container">
+    <div class="features-inner">
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-leaf"></i></div>
+        <div class="feature-text">
+          <div class="ft">100% Natural Herbs</div>
+          <div class="fs">Sourced from trusted African farms</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-user-md"></i></div>
+        <div class="feature-text">
+          <div class="ft">Expert Consultation</div>
+          <div class="fs">Personalised herbal prescriptions</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-truck"></i></div>
+        <div class="feature-text">
+          <div class="ft">Nationwide Delivery</div>
+          <div class="fs">Across Kenya within 1–3 days</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+        <div class="feature-text">
+          <div class="ft">Safe &amp; Certified</div>
+          <div class="fs">KEBS &amp; Pharmacy Board registered</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ ABOUT ═══ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-images animate-in">
+        <div class="about-img-main">
+          <img src="assets/doctor_consultation.png" alt="Penmax Herbal Doctor"/>
+        </div>
+        <div class="about-img-float">
+          <div class="circle"><i class="fas fa-award"></i></div>
+          <div>
+            <div class="about-float-num">15+</div>
+            <div class="about-float-txt">Years of Practice</div>
+          </div>
+        </div>
+      </div>
+      <div class="about-content animate-in">
+        <div class="section-label">About the Clinic</div>
+        <h2 class="section-title">Traditional Healing Guided by Modern Knowledge</h2>
+        <p style="color:var(--text-mid);margin-bottom:16px;">For centuries, African communities relied on medicinal plants, roots and minerals to maintain health and fight disease. This knowledge was passed through generations and is now being rediscovered by modern science.</p>
+        <p style="color:var(--text-mid);">At Penmax Nutrition &amp; Herbal Clinic, we honour this tradition by combining ancient herbal wisdom with current nutritional understanding. Our approach focuses on restoring the body's internal balance rather than merely suppressing symptoms.</p>
+        <ul class="about-list">
+          <li class="about-list-item"><i class="fas fa-check-circle"></i> We investigate root causes — toxins, poor nutrition, stress and organ imbalance</li>
+          <li class="about-list-item"><i class="fas fa-check-circle"></i> Every patient receives an individualised herbal programme</li>
+          <li class="about-list-item"><i class="fas fa-check-circle"></i> We support the body's own intelligence to restore wellness</li>
+          <li class="about-list-item"><i class="fas fa-check-circle"></i> Clinics in Rongai, Nairobi Town and Githurai</li>
+        </ul>
+        <a href="about.html" class="btn btn-primary">Learn More About Us</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CONDITIONS ═══ -->
+<section class="section-pad conditions-bg">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">What We Address</div>
+      <h2 class="section-title">Conditions We Support Naturally</h2>
+      <p class="section-sub" style="margin:0 auto 0;">Our holistic programmes are designed to support the body in addressing a wide range of health challenges through natural means.</p>
+    </div>
+    <div class="conditions-grid">
+      <div class="condition-card animate-in">
+        <div class="cond-icon">🩺</div>
+        <div class="cond-title">Diabetes Support</div>
+        <div class="cond-desc">Herbal formulas and nutritional guidance to support healthy blood sugar regulation and metabolic balance.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">🌀</div>
+        <div class="cond-title">Digestive Problems</div>
+        <div class="cond-desc">Natural support for bloating, constipation, IBS and poor nutrient absorption through targeted gut herbs.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">🔥</div>
+        <div class="cond-title">Ulcers &amp; Acid Reflux</div>
+        <div class="cond-desc">Soothing herbal blends designed to calm gastric inflammation, reduce acidity and restore mucosal health.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">❤️</div>
+        <div class="cond-title">Blood Pressure Support</div>
+        <div class="cond-desc">Traditional herbs known for their role in supporting healthy circulation and cardiovascular balance.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">🛡️</div>
+        <div class="cond-title">Immune Weakness</div>
+        <div class="cond-desc">Immunity-boosting herbs rich in antioxidants and phytonutrients to strengthen the body's defences.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">⚡</div>
+        <div class="cond-title">Fatigue &amp; Low Energy</div>
+        <div class="cond-desc">Adaptogenic and energy-supporting herbal formulas to combat chronic tiredness and adrenal fatigue.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">⚖️</div>
+        <div class="cond-title">Hormonal Imbalance</div>
+        <div class="cond-desc">Targeted plant-based support for hormonal disruptions affecting mood, weight, cycles and energy levels.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">🌸</div>
+        <div class="cond-title">Skin Conditions</div>
+        <div class="cond-desc">Blood-purifying and anti-inflammatory herbs to address acne, eczema, psoriasis and skin inflammation from within.</div>
+      </div>
+      <div class="condition-card animate-in">
+        <div class="cond-icon">💧</div>
+        <div class="cond-title">Kidney Wellness</div>
+        <div class="cond-desc">Gentle herbal formulas to support kidney filtration, reduce inflammation and promote urinary tract health.</div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="conditions.html" class="btn btn-primary">View All Conditions</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ DETOX ═══ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="detox-grid">
+      <div class="detox-img animate-in">
+        <img src="assets/herbal_detox_section.png" alt="Natural Herbal Detox"/>
+      </div>
+      <div class="animate-in">
+        <div class="section-label">Detoxification Programs</div>
+        <h2 class="section-title">Cleanse, Reset &amp; Restore Your Body</h2>
+        <p style="color:var(--text-mid);margin-bottom:16px;">Modern life exposes us to toxins through processed foods, environmental chemicals, stress hormones and pollutants. Over time, these accumulate and strain the liver, kidneys and digestive system — reducing energy, immunity and overall wellbeing.</p>
+        <p style="color:var(--text-mid);margin-bottom:24px;">Our structured detox programmes use targeted herbal formulas to support the body's natural cleansing organs, helping them function optimally.</p>
+        <div class="detox-pillars">
+          <div class="detox-pillar"><i class="fas fa-leaf"></i><span>Liver Cleanse</span></div>
+          <div class="detox-pillar"><i class="fas fa-tint"></i><span>Kidney Support</span></div>
+          <div class="detox-pillar"><i class="fas fa-stomach"></i><span>Gut Cleanse</span></div>
+          <div class="detox-pillar"><i class="fas fa-heart"></i><span>Blood Purification</span></div>
+        </div>
+        <div style="margin-top:28px;">
+          <a href="services.html#detox" class="btn btn-primary">Explore Detox Programs</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ PRODUCTS ═══ -->
+<section class="section-pad products-bg">
+  <div class="container">
+    <div class="products-header">
+      <div>
+        <div class="section-label">Our Herbal Store</div>
+        <h2 class="section-title">Featured Herbal Products</h2>
+      </div>
+      <a href="store.html" class="btn btn-outline">View All Products</a>
+    </div>
+    <div class="categories-tabs">
+      <button class="cat-tab active">All Products</button>
+      <button class="cat-tab">Detox Formulas</button>
+      <button class="cat-tab">Immunity</button>
+      <button class="cat-tab">Women's Wellness</button>
+      <button class="cat-tab">Men's Vitality</button>
+    </div>
+    <div class="products-grid">
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Activated-charcoal-Natural-Remedies-Clinic.png" alt="Activated Charcoal Detox"/>
+          <span class="product-badge">Best Seller</span>
+          <div class="product-actions">
+            <a href="product.html?id=1" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Add to Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Add to Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Activated Charcoal Detox</div>
+          <div class="product-meta">Deep body cleansing formula</div>
+          <div class="product-price">KSh 1,800</div>
+          <div class="product-btns">
+            <a href="product.html?id=1" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Blood-Pressure-Herbal-Blend-Natural-Remedies-clinic.png" alt="Blood Pressure Herbal Blend"/>
+          <span class="product-badge hot">Popular</span>
+          <div class="product-actions">
+            <a href="product.html?id=2" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Blood Pressure Herbal Blend</div>
+          <div class="product-meta">Cardiovascular support formula</div>
+          <div class="product-price"><span class="old">KSh 2,500</span> KSh 2,100</div>
+          <div class="product-btns">
+            <a href="product.html?id=2" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Moringa-Powder-Natural-Remedies-clinic-430x430.png" alt="Moringa Powder"/>
+          <div class="product-actions">
+            <a href="product.html?id=3" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Organic Moringa Powder</div>
+          <div class="product-meta">Superfood &amp; immunity booster</div>
+          <div class="product-price">KSh 950</div>
+          <div class="product-btns">
+            <a href="product.html?id=3" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Mens-Power-Natural-Remedies-Clinic-1-430x430.png" alt="Men's Power Formula"/>
+          <span class="product-badge">New</span>
+          <div class="product-actions">
+            <a href="product.html?id=4" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Men's Power Formula</div>
+          <div class="product-meta">Vitality &amp; stamina support</div>
+          <div class="product-price">KSh 2,800</div>
+          <div class="product-btns">
+            <a href="product.html?id=4" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Turmeric-Powder-Natural-Remedies-clinic-430x430.png" alt="Turmeric Powder"/>
+          <div class="product-actions">
+            <a href="product.html?id=5" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Turmeric Anti-Inflammatory</div>
+          <div class="product-meta">Joints &amp; inflammation support</div>
+          <div class="product-price">KSh 1,200</div>
+          <div class="product-btns">
+            <a href="product.html?id=5" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Aloe-Vera-Powder-1-Natural-Remedies-clinic-430x430.png" alt="Aloe Vera Powder"/>
+          <div class="product-actions">
+            <a href="product.html?id=6" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Aloe Vera Digestive Powder</div>
+          <div class="product-meta">Gut soothing &amp; detox support</div>
+          <div class="product-price">KSh 1,400</div>
+          <div class="product-btns">
+            <a href="product.html?id=6" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Organic-India-Shatavari.jpg" alt="Shatavari Women's Herb"/>
+          <span class="product-badge hot">Women</span>
+          <div class="product-actions">
+            <a href="product.html?id=7" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">Shatavari Women's Tonic</div>
+          <div class="product-meta">Hormonal balance &amp; vitality</div>
+          <div class="product-price">KSh 2,200</div>
+          <div class="product-btns">
+            <a href="product.html?id=7" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+      <div class="product-card">
+        <div class="product-img-wrap">
+          <img src="assets/Boabab-Fruit-powder-1-430x512.jpg" alt="Baobab Powder"/>
+          <div class="product-actions">
+            <a href="product.html?id=8" title="Quick View"><i class="fas fa-eye"></i></a>
+            <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+            <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+          </div>
+        </div>
+        <div class="product-info">
+          <div class="product-name">African Baobab Powder</div>
+          <div class="product-meta">Antioxidant &amp; prebiotic superfood</div>
+          <div class="product-price">KSh 1,600</div>
+          <div class="product-btns">
+            <a href="product.html?id=8" class="btn btn-outline">Details</a>
+            <a href="#" class="btn btn-primary add-to-cart">Add to Cart</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ SERVICES ═══ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">What We Offer</div>
+      <h2 class="section-title">Our Clinical Services</h2>
+      <p class="section-sub" style="margin:0 auto;">Expert herbal and nutritional services designed to support your unique health journey.</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card animate-in">
+        <div class="service-icon"><i class="fas fa-heartbeat"></i></div>
+        <div class="service-title">Full Body Scan</div>
+        <div class="service-desc">Comprehensive health assessment to identify imbalances in organ function, nutrient deficiencies and systemic stress points.</div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon"><i class="fas fa-user-md"></i></div>
+        <div class="service-title">Herbal Consultation</div>
+        <div class="service-desc">One-on-one session with our specialist to review your health history and design a personalised herbal programme.</div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon"><i class="fas fa-apple-alt"></i></div>
+        <div class="service-title">Nutrition Therapy</div>
+        <div class="service-desc">Evidence-based dietary guidance integrated with herbal support to heal from the inside out.</div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon"><i class="fas fa-spa"></i></div>
+        <div class="service-title">Detox Programs</div>
+        <div class="service-desc">Structured cleansing protocols targeting liver, kidneys, gut and blood to restore energy and immune strength.</div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon"><i class="fas fa-prescription-bottle-alt"></i></div>
+        <div class="service-title">Personalised Prescription</div>
+        <div class="service-desc">Custom-blended herbal formulas prepared specifically for your health condition and constitution.</div>
+      </div>
+      <div class="service-card animate-in">
+        <div class="service-icon"><i class="fas fa-phone-alt"></i></div>
+        <div class="service-title">Online Consultation</div>
+        <div class="service-desc">Remote herbal consultations via phone or video call — accessible from anywhere in Kenya and East Africa.</div>
+      </div>
+    </div>
+    <div class="text-center" style="margin-top:40px;">
+      <a href="services.html" class="btn btn-primary">Explore All Services</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ WOMEN WELLNESS ═══ -->
+<section class="section-pad conditions-bg">
+  <div class="container">
+    <div class="wellness-grid">
+      <div class="wellness-img animate-in">
+        <img src="assets/Country-Life-Core-Daily-1-Multivitamin-Women-60tablets.png" alt="Women Wellness" style="object-fit:contain;background:#f0f0f0;"/>
+      </div>
+      <div class="animate-in">
+        <div class="wellness-tag">Women's Wellness</div>
+        <div class="section-label">Natural Female Health</div>
+        <h2 class="section-title">Herbal Support for the Modern Woman</h2>
+        <p style="color:var(--text-mid);margin-bottom:20px;">A woman's health is deeply connected to hormonal balance, nutritional status and the strength of her reproductive systems. Stress, poor nutrition and environmental toxins can disrupt this balance, affecting everything from energy levels to mood and fertility.</p>
+        <ul class="wellness-list">
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Hormonal balance and regulation</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Reproductive system support</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Menstrual cycle normalisation</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Tissue nourishment and vitality</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Menopausal transition support</li>
+        </ul>
+        <a href="store.html?cat=women" class="btn btn-gold">Shop Women's Products</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ MEN VITALITY ═══ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="wellness-grid wellness-reverse">
+      <div class="animate-in">
+        <div class="wellness-tag" style="background:var(--green-dark);">Men's Vitality</div>
+        <div class="section-label">Natural Male Health</div>
+        <h2 class="section-title">Strength &amp; Vitality, Naturally</h2>
+        <p style="color:var(--text-mid);margin-bottom:20px;">Men face unique challenges — declining testosterone, chronic stress, poor circulation and low energy are increasingly common. Our herbal vitality programmes address these issues at their root, supporting the body's natural capacity for strength and performance.</p>
+        <ul class="wellness-list">
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Stamina and physical endurance</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Healthy circulation support</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Reproductive health and libido</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Testosterone balance</li>
+          <li class="wellness-list-item"><i class="fas fa-star"></i> Prostate wellness support</li>
+        </ul>
+        <a href="store.html?cat=men" class="btn btn-primary">Shop Men's Products</a>
+      </div>
+      <div class="wellness-img animate-in">
+        <img src="assets/Mens-Power-Natural-Remedies-Clinic-1-430x430.png" alt="Men Vitality" style="object-fit:contain;background:#f0f0f0;"/>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ STATS ═══ -->
+<section class="stats-bar">
+  <div class="container">
+    <div class="stats-grid">
+      <div class="stat-item">
+        <span class="stat-num">8,000+</span>
+        <span class="stat-lbl">Patients Served</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">15+</span>
+        <span class="stat-lbl">Years Experience</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">200+</span>
+        <span class="stat-lbl">Herbal Formulas</span>
+      </div>
+      <div class="stat-item">
+        <span class="stat-num">3</span>
+        <span class="stat-lbl">Clinic Branches</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ TESTIMONIALS ═══ -->
+<section class="section-pad testimonials-bg">
+  <div class="container">
+    <div class="text-center testimonials-header">
+      <div class="section-label">Patient Stories</div>
+      <h2 class="section-title">What Our Patients Say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial-card animate-in">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">I had been struggling with high blood pressure for three years. After a three-month programme at Penmax, my readings have normalised and I feel more energetic than I have in years. The herbal formulas truly work.</div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar-placeholder">JM</div>
+          <div>
+            <div class="testimonial-name">James Mwangi</div>
+            <div class="testimonial-role">Nairobi — Blood Pressure Patient</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-in">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">The women's wellness programme helped me regulate my cycle after years of hormonal issues. I appreciate how the doctor explains everything clearly and treats the root cause rather than just symptoms.</div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar-placeholder">FW</div>
+          <div>
+            <div class="testimonial-name">Faith Wanjiku</div>
+            <div class="testimonial-role">Rongai — Women's Wellness Patient</div>
+          </div>
+        </div>
+      </div>
+      <div class="testimonial-card animate-in">
+        <div class="testimonial-quote">"</div>
+        <div class="stars">★★★★★</div>
+        <div class="testimonial-text">After the full body detox programme, my skin cleared up completely, my energy returned and my digestion improved dramatically. I recommend Penmax Herbal Clinic to everyone I know.</div>
+        <div class="testimonial-author">
+          <div class="testimonial-avatar-placeholder">PO</div>
+          <div>
+            <div class="testimonial-name">Peter Ochieng</div>
+            <div class="testimonial-role">Githurai — Detox Programme</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ BLOG ═══ -->
+<section class="section-pad">
+  <div class="container">
+    <div class="products-header">
+      <div>
+        <div class="section-label">Health Education</div>
+        <h2 class="section-title">From Our Knowledge Centre</h2>
+      </div>
+      <a href="blog.html" class="btn btn-outline">All Articles</a>
+    </div>
+    <div class="blog-grid">
+      <div class="blog-card animate-in">
+        <div class="blog-img">
+          <img src="assets/Moringa-Powder-Natural-Remedies-clinic-430x430.png" alt="African Medicinal Plants"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-category">Herbal Medicine</span>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> March 2026</span>
+            <span><i class="fas fa-user"></i> Penmax Clinic</span>
+          </div>
+          <div class="blog-title">The Power of African Medicinal Plants</div>
+          <div class="blog-excerpt">Africa is home to thousands of plant species with proven medicinal properties. Discover the herbs our ancestors used that science is only now beginning to understand.</div>
+          <a href="blog.html#post1" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="blog-card animate-in">
+        <div class="blog-img">
+          <img src="assets/herbal_detox_section.png" alt="Natural Detox"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-category">Detoxification</span>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> February 2026</span>
+            <span><i class="fas fa-user"></i> Penmax Clinic</span>
+          </div>
+          <div class="blog-title">Understanding Natural Detoxification</div>
+          <div class="blog-excerpt">Your liver processes over 500 functions daily. Learn how herbal detoxification supports your body's natural cleansing systems for better health.</div>
+          <a href="blog.html#post2" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+      <div class="blog-card animate-in">
+        <div class="blog-img">
+          <img src="assets/Turmeric-Powder-Natural-Remedies-clinic-430x430.png" alt="Nutrition Healing"/>
+        </div>
+        <div class="blog-body">
+          <span class="blog-category">Nutrition</span>
+          <div class="blog-meta">
+            <span><i class="fas fa-calendar"></i> January 2026</span>
+            <span><i class="fas fa-user"></i> Penmax Clinic</span>
+          </div>
+          <div class="blog-title">How Nutrition Supports Your Healing</div>
+          <div class="blog-excerpt">The food you eat is either medicine or slow poison. Explore how targeted nutritional therapy accelerates natural healing and disease reversal.</div>
+          <a href="blog.html#post3" class="blog-link">Read More <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ LOCATIONS ═══ -->
+<section class="section-pad locations-bg">
+  <div class="container">
+    <div class="text-center">
+      <div class="section-label">Find Us</div>
+      <h2 class="section-title">Our Clinic Locations</h2>
+      <p class="section-sub" style="margin:0 auto 0;">Visit us at any of our three branches across Nairobi and surrounding areas.</p>
+    </div>
+    <div class="locations-grid">
+      <div class="location-card animate-in">
+        <div class="location-icon"><i class="fas fa-map-marker-alt"></i></div>
+        <div class="location-name">Rongai Branch</div>
+        <div class="location-detail"><i class="fas fa-map-pin"></i> Rongai Town, Near Total Petrol Station, Nairobi</div>
+        <div class="location-detail"><i class="fas fa-phone"></i> +254 700 000 001</div>
+        <div class="location-detail"><i class="fas fa-clock"></i> Mon–Sat: 8:00AM – 6:00PM</div>
+        <div class="location-btns">
+          <a href="booking.html" class="btn btn-primary">Book Visit</a>
+          <a href="https://wa.me/254700000001" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="location-card animate-in">
+        <div class="location-icon"><i class="fas fa-clinic-medical"></i></div>
+        <div class="location-name">Nairobi Town Branch</div>
+        <div class="location-detail"><i class="fas fa-map-pin"></i> Ronald Ngala Street, CBD, Nairobi</div>
+        <div class="location-detail"><i class="fas fa-phone"></i> +254 700 000 002</div>
+        <div class="location-detail"><i class="fas fa-clock"></i> Mon–Sat: 8:00AM – 6:00PM</div>
+        <div class="location-btns">
+          <a href="booking.html" class="btn btn-primary">Book Visit</a>
+          <a href="https://wa.me/254700000002" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="location-card animate-in">
+        <div class="location-icon"><i class="fas fa-leaf"></i></div>
+        <div class="location-name">Githurai Branch</div>
+        <div class="location-detail"><i class="fas fa-map-pin"></i> Githurai 44, Main Road, Nairobi</div>
+        <div class="location-detail"><i class="fas fa-phone"></i> +254 700 000 003</div>
+        <div class="location-detail"><i class="fas fa-clock"></i> Mon–Sat: 8:00AM – 6:00PM</div>
+        <div class="location-btns">
+          <a href="booking.html" class="btn btn-primary">Book Visit</a>
+          <a href="https://wa.me/254700000003" class="btn btn-outline" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ CTA ═══ -->
+<section class="cta-banner">
+  <div class="container">
+    <h2>Ready to Begin Your Natural Healing Journey?</h2>
+    <p>Book a consultation today and receive a personalised herbal health programme tailored to your needs.</p>
+    <div class="cta-btns">
+      <a href="booking.html" class="btn btn-gold"><i class="fas fa-calendar-check"></i> Book Consultation</a>
+      <a href="https://wa.me/254700000000" class="btn btn-white" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ NEWSLETTER ═══ -->
+<section class="section-pad-sm newsletter-bg">
+  <div class="container">
+    <div class="newsletter-inner">
+      <div class="section-label" style="justify-content:center;">Stay Informed</div>
+      <h2 class="section-title text-center" style="font-size:1.8rem;">Get Natural Health Tips Weekly</h2>
+      <p style="color:var(--text-mid);text-align:center;">Join 5,000+ Kenyans receiving free herbal health tips, clinic news and exclusive product offers.</p>
+      <form class="newsletter-form">
+        <input type="email" placeholder="Your email address" required/>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo">
+            <img src="assets/Penmax 2 logo.png" alt="Penmax Herbal Clinic"/>
+          </div>
+          <p>Penmax Nutrition &amp; Herbal Clinic combines traditional African herbal wisdom with modern nutritional science to support your body's natural healing intelligence.</p>
+          <div class="social-links">
+            <a href="#" class="social-link" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-link" title="YouTube"><i class="fab fa-youtube"></i></a>
+            <a href="https://wa.me/254700000000" class="social-link" title="WhatsApp" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="#" class="social-link" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About the Clinic</a></li>
+            <li><a href="services.html">Our Services</a></li>
+            <li><a href="conditions.html">Conditions Treated</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+            <li><a href="blog.html">Health Blog</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Herbal Products</h4>
+          <ul class="footer-links">
+            <li><a href="store.html?cat=detox">Detox Formulas</a></li>
+            <li><a href="store.html?cat=immunity">Immunity Boosters</a></li>
+            <li><a href="store.html?cat=digestive">Digestive Support</a></li>
+            <li><a href="store.html?cat=women">Women's Wellness</a></li>
+            <li><a href="store.html?cat=men">Men's Vitality</a></li>
+            <li><a href="store.html?cat=weight">Weight Management</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Information</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+254 700 000 000</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@penmaxherbal.co.ke</span></div>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Rongai, Nairobi Town &amp; Githurai</span></div>
+          <div class="footer-contact-item"><i class="fas fa-clock"></i><span>Mon–Sat: 8AM–6PM</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">
+      <div class="footer-bottom-inner">
+        <span>© 2026 Penmax Nutrition &amp; Herbal Clinic. All Rights Reserved.</span>
+        <span><a href="#">Privacy Policy</a> · <a href="#">Terms of Use</a> · <a href="#">Disclaimer</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/payment.js"></script>
+<script src="js/cart.js"></script>
+</body>
+</html>

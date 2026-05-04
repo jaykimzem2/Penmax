@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Herbal Products Store | Penmax Nutrition & Herbal Clinic</title>
+<meta name="description" content="Shop natural herbal products online. Detox formulas, immunity boosters, women's wellness and men's vitality herbs. Delivered across Kenya."/>
+<link rel="stylesheet" href="css/style.css"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+<style>
+.store-layout{display:grid;grid-template-columns:260px 1fr;gap:36px;margin-top:40px;}
+.sidebar-card{background:#fff;border-radius:var(--radius-md);padding:24px;box-shadow:var(--shadow-sm);margin-bottom:20px;border:1px solid rgba(0,0,0,.05);}
+.sidebar-card h3{font-size:1rem;font-weight:700;color:var(--green-dark);margin-bottom:16px;font-family:'Inter',sans-serif;}
+.sidebar-cat-list{display:flex;flex-direction:column;gap:4px;}
+.sidebar-cat-list li a{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-radius:var(--radius-sm);font-size:.88rem;color:var(--text-mid);transition:var(--transition);}
+.sidebar-cat-list li a:hover,.sidebar-cat-list li a.active{background:var(--green-pale);color:var(--green-dark);font-weight:600;}
+.sidebar-cat-list li a .count{background:var(--green-dark);color:#fff;padding:2px 8px;border-radius:50px;font-size:.72rem;}
+.price-range{display:flex;flex-direction:column;gap:10px;}
+.price-range input[type=range]{accent-color:var(--green-dark);width:100%;}
+.price-range .values{display:flex;justify-content:space-between;font-size:.82rem;color:var(--text-mid);}
+.store-header{display:flex;align-items:center;justify-content:space-between;margin-bottom:24px;flex-wrap:wrap;gap:12px;}
+.store-header select{padding:10px 16px;border:2px solid rgba(0,0,0,.1);border-radius:var(--radius-sm);font-family:inherit;font-size:.88rem;outline:none;cursor:pointer;}
+.store-count{font-size:.88rem;color:var(--text-light);}
+@media(max-width:860px){.store-layout{grid-template-columns:1fr;} .store-sidebar{display:none;}}
+</style>
+</head>
+<body>
+<a href="https://wa.me/254700000000" class="whatsapp-float" target="_blank"><i class="fab fa-whatsapp"></i></a>
+
+<div class="top-bar">
+  <div class="container">
+    <div class="top-bar-left">
+      <span class="top-bar-item"><i class="fas fa-phone"></i> +254 700 000 000</span>
+      <span class="top-bar-item"><i class="fas fa-envelope"></i> info@penmaxherbal.co.ke</span>
+    </div>
+    <div class="top-bar-right">
+      <span class="top-bar-item"><i class="fas fa-truck"></i> Free delivery over KSh 3,000</span>
+      <a href="#" class="cart-toggle"><i class="fas fa-shopping-cart"></i> Cart (<span class="cart-count">0</span>)</a>
+    </div>
+  </div>
+</div>
+
+<nav class="navbar" id="navbar">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo"><img src="assets/Penmax main logo.png" alt="Penmax"/></a>
+      <ul class="nav-menu">
+        <li><a href="index.html" class="nav-link">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="services.html" class="nav-link">Services</a></li>
+        <li><a href="store.html" class="nav-link active">Shop</a></li>
+        <li><a href="conditions.html" class="nav-link">Conditions</a></li>
+        <li><a href="blog.html" class="nav-link">Blog</a></li>
+        <li><a href="contact.html" class="nav-link">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="booking.html" class="btn btn-primary">Book Consultation</a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </div>
+</nav>
+
+<div class="page-header">
+  <div class="container">
+    <h1>Herbal Products Store</h1>
+    <p>Natural herbal formulas sourced and blended with care</p>
+    <div class="breadcrumb"><a href="index.html">Home</a> <i class="fas fa-chevron-right" style="font-size:.65rem"></i> <span>Shop</span></div>
+  </div>
+</div>
+
+<section class="section-pad">
+  <div class="container">
+    <div class="store-layout">
+      <!-- Sidebar -->
+      <aside class="store-sidebar">
+        <div class="sidebar-card">
+          <h3>Product Categories</h3>
+          <ul class="sidebar-cat-list">
+            <li><a href="#" class="active">All Products <span class="count">20</span></a></li>
+            <li><a href="#">Detox Formulas <span class="count">5</span></a></li>
+            <li><a href="#">Immunity Boosters <span class="count">4</span></a></li>
+            <li><a href="#">Digestive Support <span class="count">3</span></a></li>
+            <li><a href="#">Blood Cleansers <span class="count">2</span></a></li>
+            <li><a href="#">Women's Wellness <span class="count">3</span></a></li>
+            <li><a href="#">Men's Vitality <span class="count">2</span></a></li>
+            <li><a href="#">Weight Management <span class="count">1</span></a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card">
+          <h3>Price Range (KSh)</h3>
+          <div class="price-range">
+            <input type="range" min="500" max="10000" value="5000" id="priceRange"/>
+            <div class="values"><span>500</span><span id="priceVal">5,000</span></div>
+          </div>
+        </div>
+        <div class="sidebar-card">
+          <h3>Health Goals</h3>
+          <ul class="sidebar-cat-list">
+            <li><a href="#">Liver Support</a></li>
+            <li><a href="#">Kidney Health</a></li>
+            <li><a href="#">Blood Sugar</a></li>
+            <li><a href="#">Bone &amp; Joint</a></li>
+            <li><a href="#">Heart Health</a></li>
+            <li><a href="#">Skin Health</a></li>
+          </ul>
+        </div>
+        <div class="sidebar-card" style="background:var(--green-dark);border-color:transparent;">
+          <h3 style="color:#fff;">Need Guidance?</h3>
+          <p style="font-size:.85rem;color:rgba(255,255,255,.8);margin-bottom:16px;">Not sure which product is right for you? Book a free consultation.</p>
+          <a href="booking.html" class="btn btn-gold" style="width:100%;justify-content:center;">Book Free Consult</a>
+        </div>
+      </aside>
+
+      <!-- Product Grid -->
+      <div>
+        <div class="store-header">
+          <div class="store-count">Showing <strong>20</strong> products</div>
+          <select>
+            <option>Sort by: Featured</option>
+            <option>Price: Low to High</option>
+            <option>Price: High to Low</option>
+            <option>Newest First</option>
+          </select>
+        </div>
+        <div class="products-grid" style="grid-template-columns:repeat(3,1fr);">
+          <!-- Product 1 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Activated-charcoal-Natural-Remedies-Clinic.png" alt="Activated Charcoal Detox"/>
+              <span class="product-badge">Best Seller</span>
+              <div class="product-actions">
+                <a href="product.html?id=1" title="View"><i class="fas fa-eye"></i></a>
+                <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Activated Charcoal Detox</div>
+              <div class="product-meta">Deep body cleansing formula</div>
+              <div class="product-price">KSh 1,800</div>
+              <div class="product-btns"><a href="product.html?id=1" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 2 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Blood-Pressure-Herbal-Blend-Natural-Remedies-clinic.png" alt="Blood Pressure Blend"/>
+              <span class="product-badge hot">Popular</span>
+              <div class="product-actions">
+                <a href="product.html?id=2" title="View"><i class="fas fa-eye"></i></a>
+                <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Blood Pressure Herbal Blend</div>
+              <div class="product-meta">Cardiovascular support formula</div>
+              <div class="product-price"><span class="old">KSh 2,500</span> KSh 2,100</div>
+              <div class="product-btns"><a href="product.html?id=2" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 3 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Moringa-Powder-Natural-Remedies-clinic-430x430.png" alt="Moringa Powder"/>
+              <div class="product-actions">
+                <a href="product.html?id=3" title="View"><i class="fas fa-eye"></i></a>
+                <a href="#" title="Wishlist"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart" title="Cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Organic Moringa Powder</div>
+              <div class="product-meta">Superfood &amp; immunity booster</div>
+              <div class="product-price">KSh 950</div>
+              <div class="product-btns"><a href="product.html?id=3" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 4 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Mens-Power-Natural-Remedies-Clinic-1-430x430.png" alt="Men's Power"/>
+              <span class="product-badge">New</span>
+              <div class="product-actions">
+                <a href="product.html?id=4"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Men's Power Formula</div>
+              <div class="product-meta">Vitality &amp; stamina support</div>
+              <div class="product-price">KSh 2,800</div>
+              <div class="product-btns"><a href="product.html?id=4" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 5 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Turmeric-Powder-Natural-Remedies-clinic-430x430.png" alt="Turmeric"/>
+              <div class="product-actions">
+                <a href="product.html?id=5"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Turmeric Anti-Inflammatory</div>
+              <div class="product-meta">Joints &amp; inflammation support</div>
+              <div class="product-price">KSh 1,200</div>
+              <div class="product-btns"><a href="product.html?id=5" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 6 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Aloe-Vera-Powder-1-Natural-Remedies-clinic-430x430.png" alt="Aloe Vera"/>
+              <div class="product-actions">
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Aloe Vera Digestive Powder</div>
+              <div class="product-meta">Gut soothing &amp; detox</div>
+              <div class="product-price">KSh 1,400</div>
+              <div class="product-btns"><a href="#" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 7 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Organic-India-Shatavari.jpg" alt="Shatavari"/>
+              <span class="product-badge hot">Women</span>
+              <div class="product-actions">
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Shatavari Women's Tonic</div>
+              <div class="product-meta">Hormonal balance &amp; vitality</div>
+              <div class="product-price">KSh 2,200</div>
+              <div class="product-btns"><a href="#" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 8 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Boabab-Fruit-powder-1-430x512.jpg" alt="Baobab"/>
+              <div class="product-actions">
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">African Baobab Powder</div>
+              <div class="product-meta">Antioxidant superfood</div>
+              <div class="product-price">KSh 1,600</div>
+              <div class="product-btns"><a href="#" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 9 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Epsom-Salt-Natural-Remedies-Clinic-430x430.png" alt="Epsom Salt"/>
+              <div class="product-actions">
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Epsom Salt Detox Bath</div>
+              <div class="product-meta">Magnesium &amp; skin detox</div>
+              <div class="product-price">KSh 800</div>
+              <div class="product-btns"><a href="#" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 10 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/Country-Life-Core-Daily-1-Multivitamin-Women-60tablets.png" alt="Women Multivitamin"/>
+              <span class="product-badge hot">Women</span>
+              <div class="product-actions">
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Women's Daily Multivitamin</div>
+              <div class="product-meta">Complete daily nutritional support</div>
+              <div class="product-price">KSh 3,200</div>
+              <div class="product-btns"><a href="#" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 11 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/BIO-H-FENUGREEK-SEED-60S.webp" alt="Fenugreek"/>
+              <div class="product-actions">
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Fenugreek Seed Capsules</div>
+              <div class="product-meta">Blood sugar &amp; digestion</div>
+              <div class="product-price">KSh 1,800</div>
+              <div class="product-btns"><a href="#" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+          <!-- Product 12 -->
+          <div class="product-card">
+            <div class="product-img-wrap">
+              <img src="assets/bio-3-Weight-Control-600x600.webp" alt="Weight Control"/>
+              <span class="product-badge">New</span>
+              <div class="product-actions">
+                <a href="#"><i class="fas fa-eye"></i></a>
+                <a href="#"><i class="fas fa-heart"></i></a>
+                <a href="#" class="add-to-cart"><i class="fas fa-shopping-cart"></i></a>
+              </div>
+            </div>
+            <div class="product-info">
+              <div class="product-name">Herbal Weight Control</div>
+              <div class="product-meta">Natural weight management</div>
+              <div class="product-price">KSh 2,400</div>
+              <div class="product-btns"><a href="#" class="btn btn-outline">Details</a><a href="#" class="btn btn-primary add-to-cart">Add to Cart</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-banner">
+  <div class="container">
+    <h2>Not Sure Which Product Is Right for You?</h2>
+    <p>Book a free 15-minute herbal consultation and get a personalised recommendation.</p>
+    <div class="cta-btns">
+      <a href="booking.html" class="btn btn-gold"><i class="fas fa-calendar-alt"></i> Book Free Consultation</a>
+      <a href="https://wa.me/254700000000" class="btn btn-white" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp Us</a>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-top">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="nav-logo"><img src="assets/Penmax 2 logo.png" alt="Penmax"/></div>
+          <p>Penmax Nutrition &amp; Herbal Clinic — Kenya's trusted natural healing specialists.</p>
+          <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/254700000000" class="social-link" target="_blank"><i class="fab fa-whatsapp"></i></a>
+          </div>
+        </div>
+        <div class="footer-col"><h4>Quick Links</h4>
+          <ul class="footer-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="booking.html">Book Appointment</a></li>
+          </ul>
+        </div>
+        <div class="footer-col"><h4>Product Categories</h4>
+          <ul class="footer-links">
+            <li><a href="store.html?cat=detox">Detox Formulas</a></li>
+            <li><a href="store.html?cat=immunity">Immunity Boosters</a></li>
+            <li><a href="store.html?cat=women">Women's Wellness</a></li>
+            <li><a href="store.html?cat=men">Men's Vitality</a></li>
+          </ul>
+        </div>
+        <div class="footer-col"><h4>Contact</h4>
+          <div class="footer-contact-item"><i class="fas fa-phone"></i><span>+254 700 000 000</span></div>
+          <div class="footer-contact-item"><i class="fas fa-envelope"></i><span>info@penmaxherbal.co.ke</span></div>
+          <div class="footer-contact-item"><i class="fas fa-map-marker-alt"></i><span>Rongai, Nairobi Town, Githurai</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container"><div class="footer-bottom-inner">
+      <span>© 2026 Penmax Nutrition &amp; Herbal Clinic. All Rights Reserved.</span>
+      <span><a href="#">Privacy Policy</a></span>
+    </div></div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/payment.js"></script>
+<script src="js/cart.js"></script>
+<script>
+document.getElementById('priceRange')?.addEventListener('input', function(){
+  document.getElementById('priceVal').textContent = parseInt(this.value).toLocaleString();
+});
+</script>
+</body>
+</html>
