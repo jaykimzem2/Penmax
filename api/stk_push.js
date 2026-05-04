@@ -1,5 +1,4 @@
 // PayHero STK Push Node.js API (Vercel Serverless Function)
-const fetch = require('node-fetch');
 
 export default async function handler(req, res) {
     if (req.method !== 'POST') {
