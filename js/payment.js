@@ -5,7 +5,7 @@
 
 const PenmaxPayment = {
     // API Endpoint
-    endpoint: 'api/stk_push.php',
+    endpoint: 'api/stk_push',
 
     /**
      * Initiate STK Push
