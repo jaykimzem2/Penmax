@@ -19,10 +19,10 @@ export default async function handler(req, res) {
         const payload = {
             amount: amount,
             phone_number: phone,
-            channel_id: 1, // MPESA STK PUSH
+            channel_id: 7848, // Updated as requested
             account_id: PAYHERO_ACCOUNT_ID,
             external_reference: reference || 'Penmax Payment',
-            callback_url: 'https://penmax.vercel.app/api/callback', // Update if needed
+            callback_url: 'https://penmax.vercel.app/api/callback',
         };
 
         const response = await fetch(PAYHERO_API_URL, {

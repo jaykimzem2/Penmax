@@ -19,10 +19,10 @@ $description = isset($data['description']) ? $data['description'] : 'Payment for
 $payload = [
     'amount' => $amount,
     'phone_number' => $phone,
-    'channel_id' => 1, // MPESA STK PUSH
+    'channel_id' => 7848, // Updated as requested
     'account_id' => PAYHERO_ACCOUNT_ID,
     'external_reference' => $reference,
-    'callback_url' => 'https://yourdomain.com/api/callback.php', // Replace with actual callback URL
+    'callback_url' => 'https://penmax.vercel.app/api/callback.php', 
 ];
 
 // Initialize cURL
