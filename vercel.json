@@ -1,9 +1,4 @@
 {
-  "functions": {
-    "api/*.php": {
-      "runtime": "vercel-php@0.7.0"
-    }
-  },
   "routes": [
     {
       "src": "/api/stk_push.php",
@@ -12,6 +7,10 @@
     {
       "src": "/api/stk_push",
       "dest": "/api/stk_push.js"
+    },
+    {
+      "src": "/api/callback",
+      "dest": "/api/callback.js"
     }
   ]
 }
