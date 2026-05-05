@@ -1,16 +1,7 @@
 {
-  "routes": [
-    {
-      "src": "/api/stk_push.php",
-      "dest": "/api/stk_push.js"
-    },
-    {
-      "src": "/api/stk_push",
-      "dest": "/api/stk_push.js"
-    },
-    {
-      "src": "/api/callback",
-      "dest": "/api/callback.js"
-    }
+  "rewrites": [
+    { "source": "/api/stk_push.php", "destination": "/api/stk_push.js" },
+    { "source": "/api/stk_push",     "destination": "/api/stk_push.js" },
+    { "source": "/api/callback",     "destination": "/api/callback.js" }
   ]
 }
