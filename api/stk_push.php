@@ -19,8 +19,10 @@ $description = isset($data['description']) ? $data['description'] : 'Payment for
 $payload = [
     'amount' => $amount,
     'phone_number' => $phone,
-    'channel_id' => 7848, // Updated as requested
+    'channel_id' => 7848,
+    'provider' => 'm-pesa',
     'account_id' => PAYHERO_ACCOUNT_ID,
+    'account_number' => '0727856464',
     'external_reference' => $reference,
     'callback_url' => 'https://penmax.vercel.app/api/callback.php', 
 ];

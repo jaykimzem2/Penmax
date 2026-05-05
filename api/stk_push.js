@@ -19,8 +19,10 @@ export default async function handler(req, res) {
         const payload = {
             amount: amount,
             phone_number: phone,
-            channel_id: 7848, // Updated as requested
+            channel_id: 7848,
+            provider: 'm-pesa', // Required per documentation
             account_id: PAYHERO_ACCOUNT_ID,
+            account_number: '0727856464', // Your paybill account number
             external_reference: reference || 'Penmax Payment',
             callback_url: 'https://penmax.vercel.app/api/callback',
         };

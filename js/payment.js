@@ -16,14 +16,16 @@ const PenmaxPayment = {
      */
     initiateSTK: async function(amount, phone, reference = 'PENMAX') {
         try {
-            // Clean phone number (ensure 254 format)
+            // Clean phone number (ensure 07 format for PayHero)
             let cleanPhone = phone.replace(/\D/g, '');
-            if (cleanPhone.startsWith('0')) {
-                cleanPhone = '254' + cleanPhone.substring(1);
-            } else if (cleanPhone.startsWith('7') || cleanPhone.startsWith('1')) {
-                cleanPhone = '254' + cleanPhone;
-            } else if (!cleanPhone.startsWith('254')) {
-                throw new Error('Please enter a valid Safaricom number');
+            if (cleanPhone.startsWith('254')) {
+                cleanPhone = '0' + cleanPhone.substring(3);
+            } else if (!cleanPhone.startsWith('0')) {
+                cleanPhone = '0' + cleanPhone;
+            }
+            
+            if (cleanPhone.length !== 10) {
+                throw new Error('Please enter a valid 10-digit phone number (e.g., 0712345678)');
             }
 
             const response = await fetch(this.endpoint, {
